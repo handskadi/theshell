@@ -11,8 +11,8 @@
 void my_fork(char **av, char **env, char *cmd, char **argv)
 {
 	int wait_status;
-
 	pid_t pid = fork();
+
 	if (pid < 0)
 	{
 		free(cmd);

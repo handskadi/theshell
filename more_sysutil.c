@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * duplicate_string: Duplicate String
+ * duplicate_string -  Duplicate String
  * Description: this fun will duplicate strings
  *	using string Length func.
  * @string: string to be duplicated.
