@@ -12,11 +12,13 @@
 int string_length(const char *str);
 char *make_string_copy(char *destination, char *source);
 void __print(const char *string);
+void _getline_err(ssize_t cmd_char_num, char *cmd);
 char *string_cat(char *dest, char *src);
 char *duplicate_string(const char *string);
 int string_compare(char *str1, char *str2);
-void shell_p(char **av, char **env);
+void shell_p(char **iav, char **env);
 char *get_path(char *cmd);
+void my_fork(char **av, char **env, char *cmd, char **argv);
 char *get_path_var(const char *p_name);
 void execute_command(char **argv);
 char *locate_char_str(char *string, char character);

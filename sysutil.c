@@ -56,7 +56,7 @@ void __print(const char *string)
 	write(STDOUT_FILENO, string, string_length(string));
 }
 /**
- * _string_cat - string cancatonate
+ * string_cat - string cancatonate
  * Description: it will cancatonate strings
  * @dest: destination
  * @src: source
