@@ -6,26 +6,28 @@
  * @p_name: Path name like PATH,HOME Etc
  * Return: NULL
  */
-char* get_path_var(const char* p_name) 
+char *get_path_var(const char *p_name)
 {
-	extern char **environ;
+	/*extern char **environ;*/
 	int path_index;
-	for (path_index = 0; environ[path_index] != NULL; path_index++) 
+
+	for (path_index = 0; environ[path_index] != NULL; path_index++)
 	{
-		char* eqSign = locate_char_str(environ[path_index], '=');
+		char *eqSign = locate_char_str(environ[path_index], '=');
 		size_t p_nameLength = eqSign - environ[path_index];
-		if (string_compare_2(environ[path_index], p_name, p_nameLength) == 0) 
+
+		if (string_compare_2(environ[path_index], p_name, p_nameLength) == 0)
 		{
-			return eqSign + 1;
+			return (eqSign + 1);
 		}
 	}
-	return NULL;
+	return (NULL);
 }
 
 /**
  * get_path - get the variable path of sys
  * @cmd: content of the path to be tokenized
- * return: file_path which is full path or NULL
+ * Return: file_path which is full path or NULL
  */
 char *get_path(char *cmd)
 {

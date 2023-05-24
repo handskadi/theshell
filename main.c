@@ -2,11 +2,12 @@
 
 /**
  * main - Simple Shell Project
- * Description: C project that memics the bash shell and 
- *	Thomson shell. This shell will, Reads, evaluate 
+ * Description: C project that memics the bash shell and
+ *	Thomson shell. This shell will, Reads, evaluate
  *	and excute simple commands.
- * @argc:commands counts
- * @argv: commands
+ * @ac: commands counts
+ * @av: commands
+ * @env: Enviromental
  * Return: 0 Always sucess.
  */
 
